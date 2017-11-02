@@ -6,5 +6,7 @@ groceries = {
 }
 
 def get_the_min(groceries)
-  groceries.min
+  groceries.min do |key|
+    key
+  end
 end
