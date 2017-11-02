@@ -9,7 +9,7 @@ groceries = {
 
 def get_the_min(groceries)
   groceries.each do |key|
-    groceries[key].min
+    key = groceries.min
     binding.pry
   end
 end
