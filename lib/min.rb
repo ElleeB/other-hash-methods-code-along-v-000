@@ -8,10 +8,9 @@ groceries = {
 }
 
 def get_the_min(groceries)
-  groceries.each do |key, value|
-    key.min do |item|
-      value.min
-      binding.pry
-    end
+  min_items = []
+  groceries.each do |food_category, item|
+    min_items << item.min
   end
+  min_items.min
 end
