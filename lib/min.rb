@@ -1,3 +1,5 @@
+require 'pry'
+
 groceries = {
   dairy: ["milk", "yogurt", "cheese"],
   vegetable: ["carrots", "broccoli", "cucumbers"],
@@ -6,7 +8,8 @@ groceries = {
 }
 
 def get_the_min(groceries)
-  groceries.min do |category, value|
-    category
+  groceries.each do |key|
+    binding.pry
+    min_key = key.min
   end
 end
